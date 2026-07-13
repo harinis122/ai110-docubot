@@ -80,3 +80,12 @@ You will primarily work in:
 - Python 3.9+
 - A Gemini API key for LLM features (only needed for modes 1 and 3)
 - No database, no server setup, no external services besides LLM calls
+
+
+## Teaching Summary
+Students learn that a language model should not be trusted simply because its answer sounds confident or polished. They see how retrieval helps an AI system locate relevant evidence from unfamiliar or private documentation before answering. By building DocuBot’s indexing, scoring, snippet retrieval, and refusal logic, students learn how system design can reduce hallucinations and improve reliability. Comparing naive generation, retrieval only, and RAG shows that strong AI answers depend on both clear evidence and thoughtful guardrails.
+
+## Breakout Room Questions
+1. If DocuBot returned a large section with some unrelated information, where in the retrieval process would you investigate first?
+2. What evidence should the system require before deciding it has enough information to answer instead of saying, “I don’t know”?
+3. Why might RAG give a clearer answer than retrieval-only mode even when both modes use the same retrieved snippets?
